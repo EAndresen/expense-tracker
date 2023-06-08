@@ -1,5 +1,7 @@
-import Expenses from "./components/expenses/Expenses"
-import "./components/expenses/Expenses.css"
+import "./components/Expenses/Expenses.css"
+import Expenses from "./components/Expenses/Expenses"
+import NewExpense from "./components/NewExpense/NewExpense";
+import React from "react";
 
 function App() {
     const expenses = [
@@ -27,7 +29,8 @@ function App() {
     return (
         <div>
             <h2>Expenses Tracker</h2>
-            <Expenses expenses={expenses} />
+            <NewExpense/>
+            <Expenses expenses={expenses}/>
         </div>
     )
 }
